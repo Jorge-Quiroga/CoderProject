@@ -1,7 +1,3 @@
-Claro, aquí tienes un ejemplo de cómo podría ser el contenido de un archivo README para tu página web creada con Python sobre un colegio llamado XYZ:
-
----
-
 # Página Web del Colegio XYZ
 
 Bienvenido a la página web del Colegio XYZ. Esta aplicación web está diseñada para ayudar en la gestión de información relacionada con profesores, cursos, estudiantes, entregables, eventos escolares, calificaciones y actividades recreativas.
