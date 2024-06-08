@@ -1,13 +1,108 @@
         <!-- Navigation-->
-        <nav class="navbar navbar-light bg-light static-top">
+        <!DOCTYPE html>
+        <html lang="es">
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>Inicio - Colegio XYZ</title>
+            <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+            <style>
+                /* Estilos personalizados */
+                body {
+                    background-color: #f8f9fa; /* Color de fondo similar al papel */
+                }
+                .navbar-brand {
+                    font-size: 24px;
+                    font-weight: bold;
+                    color: #007bff; /* Color azul */
+                }
+                .navbar-toggler-icon {
+                    background-image: url('data:image/svg+xml;charset=utf8,%3Csvg viewBox="0 0 30 30" xmlns="http://www.w3.org/2000/svg"%3E%3Cpath stroke="rgba(0, 123, 255, 0.5)" stroke-width="2" stroke-linecap="round" stroke-miterlimit="10" d="M4 7h22M4 15h22M4 23h22"/%3E%3C/svg%3E');
+                }
+                .navbar-nav .nav-link {
+                    font-size: 18px;
+                    color: #343a40; /* Color gris oscuro */
+                }
+                .btn-primary {
+                    background-color: #007bff; /* Color azul */
+                    border-color: #007bff; /* Color azul */
+                    font-size: 18px;
+                    font-weight: bold;
+                }
+                .btn-primary:hover {
+                    background-color: #0056b3; /* Color azul más oscuro */
+                    border-color: #0056b3; /* Color azul más oscuro */
+                }
+                .jumbotron {
+                    background-image: url('https://e.radio-grpp.io/normal/2022/11/23/002700_1350044.jpg'); /* URL de la imagen de fondo */
+                    background-size: cover;
+                    background-position: center;
+                    color: #fff; /* Texto blanco */
+                    text-align: center;
+                    padding: 100px 0;
+                    margin-bottom: 0; /* Eliminar margen inferior */
+                }
+                .jumbotron h1 {
+                    font-size: 48px;
+                    font-weight: bold;
+                    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Sombra de texto */
+                }
+                .jumbotron p {
+                    font-size: 24px;
+                    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Sombra de texto */
+                }
+            </style>
+        </head>
+        <body>
+        
+        <nav class="navbar navbar-expand-lg navbar-light bg-light static-top">
             <div class="container">
                 <div class="home-button">
-                <a class="navbar-brand" href="{% url 'Inicio' %}">Inicio</a>
+                    <a class="navbar-brand" href="{% url 'Inicio' %}">Colegio XYZ</a>
                 </div>
-                <a class="navbar-brand" href="{% url 'Profesores' %}">Profesores</a>
-                <a class="navbar-brand" href="{% url 'Cursos' %}">Cursos</a>
-                <a class="navbar-brand" href="{% url 'Estudiantes' %}">Estudiantes</a>
-                <a class="navbar-brand" href="{% url 'Entregables' %}">Entregables</a>
-                <a class="btn btn-primary" href="#">Ingresar</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="{% url 'Profesores' %}">Profesores</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="{% url 'Cursos' %}">Cursos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="{% url 'Estudiantes' %}">Estudiantes</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="{% url 'Entregables' %}">Entregables</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="{% url 'EventoEscolar' %}">Eventos Escolares</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="{% url 'Calificacion' %}">Calificaciones</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="{% url 'ActividadRecreativa' %}">Actividades Recreativas</a>
+                        </li>
+                    </ul>
+                    <a class="btn btn-primary" href="#">Ingresar</a>
+                </div>
             </div>
         </nav>
+        
+        <div class="jumbotron">
+            <div class="container">
+                <h1>Bienvenido a Colegio XYZ</h1>
+                <p>Explora nuestras opciones educativas y actividades extracurriculares.</p>
+                <a class="btn btn-primary btn-lg" href="#" role="button">Conoce más</a>
+            </div>
+        </div>
+        
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+        </body>
+        </html>
+          

@@ -37,3 +37,15 @@ def estudiantes(req):
 def entregables(req):
     
     return render(req, "entregables.html", {})
+
+def eventoescolar(req):
+
+    return render(req, "eventoescolar.html",{})
+
+def calificacion(req):
+
+    return render(req, "calificacion.html",{})
+
+def actividadrecreativa(req):
+
+    return render(req, "actividadrecreativa.html",{})

@@ -27,3 +27,20 @@ class Entregable(models.Model):
     nombre = models.CharField(max_length=40)
     fechaDeEntrega = models.DateField()
     entregado =models.BooleanField()
+
+class EventoEscolar(models.Model):
+
+    nombre = models.CharField(max_length=40)
+    fecha = models.DateField()
+    descripcion = models.CharField(max_length=30)
+
+class Calificacion(models.Model):
+
+    estudiante = models.CharField(max_length=40)
+    curso = models.CharField(max_length=40)
+    nota = models.IntegerField()
+
+class ActividadRecreativa(models.Model):
+    nombre = models.CharField(max_length=40)
+    descripcion = models.CharField(max_length=30)
+    fecha = models.DateField()
