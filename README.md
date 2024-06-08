@@ -1,4 +1,4 @@
-# Página Web del Colegio XYZ
+# Colegio XYZ
 
 Bienvenido a la página web del Colegio XYZ. Esta aplicación web está diseñada para ayudar en la gestión de información relacionada con profesores, cursos, estudiantes, entregables, eventos escolares, calificaciones y actividades recreativas.
 
